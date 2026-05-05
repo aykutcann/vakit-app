@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gizlilik Politikası — Vakit</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --bg: #0f0e0c;
+    --surface: #1a1814;
+    --gold: #c9a84c;
+    --gold-dim: #8a6f32;
+    --text: #e8e2d4;
+    --text-muted: #8a8070;
+    --border: #2a2520;
+    --accent: #4a7c59;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  /* geometric top border */
+  body::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), var(--gold-dim), var(--gold), transparent);
+  }
+
+  header {
+    text-align: center;
+    padding: 60px 24px 40px;
+    position: relative;
+  }
+
+  .crescent {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 16px;
+    opacity: 0.9;
+  }
+
+  header h1 {
+    font-family: 'Amiri', serif;
+    font-size: clamp(28px, 5vw, 42px);
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  header .app-name {
+    font-family: 'Amiri', serif;
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-top: 6px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .divider {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+    margin: 24px auto 0;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  .meta {
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 48px;
+    letter-spacing: 0.05em;
+  }
+
+  section {
+    margin-bottom: 40px;
+    padding: 28px 32px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold-dim);
+    border-radius: 2px;
+  }
+
+  section h2 {
+    font-family: 'Amiri', serif;
+    font-size: 20px;
+    color: var(--gold);
+    margin-bottom: 14px;
+    font-weight: 700;
+  }
+
+  section p {
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+
+  section p:last-child { margin-bottom: 0; }
+
+  section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  section ul li {
+    font-size: 15px;
+    color: var(--text);
+    padding: 6px 0 6px 20px;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section ul li:last-child { border-bottom: none; }
+
+  section ul li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: var(--gold-dim);
+    font-size: 8px;
+    top: 10px;
+  }
+
+  .highlight {
+    background: rgba(201,168,76,0.07);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 2px;
+    padding: 14px 18px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: var(--gold);
+  }
+
+  a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-dim); }
+  a:hover { color: #e8c96a; }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  footer .footer-logo {
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+    color: var(--gold-dim);
+    display: block;
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="crescent">☽</span>
+  <h1>Gizlilik Politikası</h1>
+  <p class="app-name">Vakit — Namaz Vakitleri</p>
+  <div class="divider"></div>
+</header>
+
+<main>
+  <p class="meta">Son güncelleme: Mayıs 2025</p>
+
+  <section>
+    <h2>1. Genel Bakış</h2>
+    <p>Vakit uygulaması, kullanıcıların namaz vakitlerini takip etmelerine yardımcı olmak amacıyla geliştirilmiştir. Gizliliğiniz bizim için önceliktir.</p>
+    <div class="highlight">Vakit, kişisel verilerinizi üçüncü taraflarla paylaşmaz, satmaz veya kiralamaz.</div>
+  </section>
+
+  <section>
+    <h2>2. Toplanan Veriler</h2>
+    <p>Uygulama yalnızca şu verilere erişir:</p>
+    <ul>
+      <li><strong>Konum verisi</strong> — Namaz vakitlerini hesaplamak için anlık konum bilginiz kullanılır. Bu veri cihazınızda işlenir, sunucularımıza gönderilmez.</li>
+      <li><strong>Bildirim izni</strong> — Ezan vakitlerinde yerel bildirim göndermek için gereklidir.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Verinin Kullanımı</h2>
+    <p>Konum bilginiz yalnızca aşağıdaki amaçlarla kullanılır:</p>
+    <ul>
+      <li>Bulunduğunuz şehre göre namaz vakitlerini hesaplamak</li>
+      <li>Doğru ezan bildirimleri zamanlamak</li>
+    </ul>
+    <p>Hiçbir veri analitik, reklam veya pazarlama amacıyla kullanılmaz.</p>
+  </section>
+
+  <section>
+    <h2>4. Veri Depolama</h2>
+    <p>Tüm veriler yalnızca cihazınızda (yerel olarak) saklanır. Uygulamamızın bulut sunucusu veya harici veritabanı bulunmamaktadır.</p>
+  </section>
+
+  <section>
+    <h2>5. Üçüncü Taraf Hizmetler</h2>
+    <p>Vakit uygulaması herhangi bir reklam ağı, analitik SDK veya üçüncü taraf izleme servisi içermemektedir.</p>
+    <p>Namaz vakitleri için kullanılan API (Aladhan veya Diyanet) yalnızca koordinat bilgisi alır; kişisel kimlik verisi iletilmez.</p>
+  </section>
+
+  <section>
+    <h2>6. Çocukların Gizliliği</h2>
+    <p>Uygulamamız 13 yaş altı çocuklara yönelik değildir ve bu yaş grubundan bilerek veri toplamaz.</p>
+  </section>
+
+  <section>
+    <h2>7. Değişiklikler</h2>
+    <p>Bu politikada yapılacak önemli değişiklikler uygulama içi bildirimle duyurulacaktır. Güncel politikaya her zaman bu sayfadan ulaşabilirsiniz.</p>
+  </section>
+
+  <section>
+    <h2>8. İletişim</h2>
+    <p>Gizlilik politikamıza ilişkin sorularınız için:</p>
+    <p><a href="mailto:destek@vakitapp.com">destek@vakitapp.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <span class="footer-logo">Vakit</span>
+  © 2025 Vakit. Tüm hakları saklıdır.
+</footer>
+
+</body>
+</html>
