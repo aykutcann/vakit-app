@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kullanım Şartları — Vakit</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --bg: #0f0e0c;
+    --surface: #1a1814;
+    --gold: #c9a84c;
+    --gold-dim: #8a6f32;
+    --text: #e8e2d4;
+    --text-muted: #8a8070;
+    --border: #2a2520;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), var(--gold-dim), var(--gold), transparent);
+  }
+
+  header {
+    text-align: center;
+    padding: 60px 24px 40px;
+  }
+
+  .crescent {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 16px;
+    opacity: 0.9;
+  }
+
+  header h1 {
+    font-family: 'Amiri', serif;
+    font-size: clamp(28px, 5vw, 42px);
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  header .app-name {
+    font-family: 'Amiri', serif;
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-top: 6px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .divider {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+    margin: 24px auto 0;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  .meta {
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 48px;
+    letter-spacing: 0.05em;
+  }
+
+  section {
+    margin-bottom: 40px;
+    padding: 28px 32px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold-dim);
+    border-radius: 2px;
+  }
+
+  section h2 {
+    font-family: 'Amiri', serif;
+    font-size: 20px;
+    color: var(--gold);
+    margin-bottom: 14px;
+    font-weight: 700;
+  }
+
+  section p {
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+
+  section p:last-child { margin-bottom: 0; }
+
+  section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  section ul li {
+    font-size: 15px;
+    color: var(--text);
+    padding: 6px 0 6px 20px;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section ul li:last-child { border-bottom: none; }
+
+  section ul li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: var(--gold-dim);
+    font-size: 8px;
+    top: 10px;
+  }
+
+  .highlight {
+    background: rgba(201,168,76,0.07);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 2px;
+    padding: 14px 18px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: var(--gold);
+  }
+
+  a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-dim); }
+  a:hover { color: #e8c96a; }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  footer .footer-logo {
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+    color: var(--gold-dim);
+    display: block;
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="crescent">☽</span>
+  <h1>Kullanım Şartları</h1>
+  <p class="app-name">Vakit — Namaz Vakitleri</p>
+  <div class="divider"></div>
+</header>
+
+<main>
+  <p class="meta">Son güncelleme: Mayıs 2025</p>
+
+  <section>
+    <h2>1. Kabul</h2>
+    <p>Vakit uygulamasını indirerek veya kullanarak bu kullanım şartlarını kabul etmiş sayılırsınız. Şartları kabul etmiyorsanız uygulamayı kullanmayınız.</p>
+  </section>
+
+  <section>
+    <h2>2. Hizmet Tanımı</h2>
+    <p>Vakit; namaz vakitlerini hesaplayan, kullanıcıya yerel bildirimler gönderen, ücretsiz bir iOS uygulamasıdır. Uygulama dini bir referans aracıdır; resmi bir dini kurum veya otorite adına hizmet vermemektedir.</p>
+  </section>
+
+  <section>
+    <h2>3. Kullanım Koşulları</h2>
+    <p>Aşağıdaki eylemler yasaktır:</p>
+    <ul>
+      <li>Uygulamayı ters mühendislik ile çözmeye çalışmak</li>
+      <li>Uygulamayı kötü amaçlı yazılım dağıtmak için kullanmak</li>
+      <li>Uygulamayı ticari amaçlarla izinsiz dağıtmak veya kopyalamak</li>
+      <li>Apple App Store kurallarını ihlal edecek şekilde kullanmak</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Vakit Doğruluğu</h2>
+    <p>Namaz vakitleri hesaplama yöntemine ve konuma göre farklılık gösterebilir. Vakit uygulaması hesaplanan vakitlerin kesin doğruluğunu garanti etmez.</p>
+    <div class="highlight">Dini yükümlülükleriniz için yetkili kaynaklara (Diyanet İşleri Başkanlığı vb.) başvurmanızı öneririz.</div>
+  </section>
+
+  <section>
+    <h2>5. Sorumluluk Reddi</h2>
+    <p>Uygulama "olduğu gibi" sunulmaktadır. Aşağıdaki durumlarda sorumluluk kabul edilmez:</p>
+    <ul>
+      <li>Bildirimlerin gecikmesi veya gelmemesi (cihaz ayarları, iOS kısıtlamaları vb.)</li>
+      <li>Konum izni verilmemesi nedeniyle yanlış vakit hesabı</li>
+      <li>İnternet bağlantısı olmadığında vakit verilerine erişilememesi</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Fikri Mülkiyet</h2>
+    <p>Vakit uygulamasına ait tüm tasarım, kod, logo ve içerik telif hakkı ile korunmaktadır. İzinsiz kopyalanamaz, çoğaltılamaz veya dağıtılamaz.</p>
+  </section>
+
+  <section>
+    <h2>7. Değişiklikler</h2>
+    <p>Bu şartlar zaman zaman güncellenebilir. Önemli değişiklikler uygulama içinde bildirilecektir. Uygulamayı kullanmaya devam etmek güncel şartları kabul ettiğiniz anlamına gelir.</p>
+  </section>
+
+  <section>
+    <h2>8. Geçerli Hukuk</h2>
+    <p>Bu kullanım şartları Türkiye Cumhuriyeti hukukuna tabidir. Anlaşmazlıklarda İstanbul mahkemeleri yetkilidir.</p>
+  </section>
+
+  <section>
+    <h2>9. İletişim</h2>
+    <p>Sorularınız için:</p>
+    <p><a href="mailto:destek@vakitapp.com">destek@vakitapp.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <span class="footer-logo">Vakit</span>
+  © 2025 Vakit. Tüm hakları saklıdır.
+</footer>
+
+</body>
+</html>
